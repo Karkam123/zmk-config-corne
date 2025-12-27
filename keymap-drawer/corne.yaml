@@ -88,8 +88,8 @@ layers:
   - {t: ▽, type: trans}
   NAV:
   - MOUSE
-  - '&to_rus'
-  - {t: '&to_qwerty', s: '&to_colemak'}
+  - RU JCUKEN
+  - {t: EN QWERTY, s: EN COLEMAK}
   - Desk Left
   - Desk Right
   - Swapper
