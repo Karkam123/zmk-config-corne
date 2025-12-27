@@ -10,13 +10,23 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <behaviors/caps_word_ru.dtsi>
 
-#define L_BASE  0
-#define L_NAV   1
-#define L_NUM   2
-#define L_SYM   3
-#define L_FUNC  4
-#define L_MOUSE 5
-#define L_BT    6
+#define COLEMAK_MM(name, X, Y) \
+name: name { \
+  compatible = "zmk,behavior-mod-morph"; \
+  #binding-cells = <0>; \
+  bindings = <&kp X>, <&kp Y>; \
+  mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>; \
+  keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>; \
+};
+
+#define L_BASE    0
+#define L_COLEMAK 1
+#define L_NAV     2
+#define L_NUM     3
+#define L_SYM     4
+#define L_FUNC    5
+#define L_MOUSE   6
+#define L_BT      7
 
 &lt { quick-tap-ms = <200>; };
 
@@ -40,18 +50,25 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     macros {
-        to_russian: to_russian {
+        to_rus: to_rus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N2)) &to 0>;
+            bindings = <&kp LS(LC(N2)) &tog_off L_COLEMAK>;
             label = "TO_RUSSIAN";
         };
 
-        to_english: to_english {
+        to_qwerty: to_qwerty {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N1)) &to 7>;
-            label = "TO_ENGLISH";
+            bindings = <&kp LS(LC(N1)) &tog_off L_COLEMAK>;
+            label = "TO_QWERTY";
+        };
+
+        to_colemak: to_colemak {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(N1)) &tog_on L_COLEMAK>;
+            label = "TO_COLEMAK";
         };
 
         // F13
@@ -206,6 +223,36 @@
             #binding-cells = <1>;
             toggle-mode = "off";
         };
+
+        // Colemak Mod-DH
+        to_eng: to_eng {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&to_qwerty>, <&to_colemak>;
+
+            #binding-cells = <0>;
+            mods = <MOD_LSFT>;
+        };
+
+        COLEMAK_MM(colemak_f, F, E)
+        COLEMAK_MM(colemak_p, P, R)
+        COLEMAK_MM(colemak_b, B, T)
+        COLEMAK_MM(colemak_r, R, S)
+        COLEMAK_MM(colemak_s, S, D)
+        COLEMAK_MM(colemak_t, T, F)
+        COLEMAK_MM(colemak_d, D, V)
+        COLEMAK_MM(colemak_v, V, B)
+        COLEMAK_MM(colemak_j, J, Y)
+        COLEMAK_MM(colemak_l, L, U)
+        COLEMAK_MM(colemak_u, U, I)
+        COLEMAK_MM(colemak_y, Y, O)
+        COLEMAK_MM(colemak_semi, SEMI, P)
+        COLEMAK_MM(colemak_m, M, H)
+        COLEMAK_MM(colemak_n, N, J)
+        COLEMAK_MM(colemak_e, E, K)
+        COLEMAK_MM(colemak_i, I, L)
+        COLEMAK_MM(colemak_o, O, SEMI)
+        COLEMAK_MM(colemak_k, K, N)
+        COLEMAK_MM(colemak_h, H, M)
     };
 
     keymap {
@@ -220,12 +267,21 @@
             >;
         };
 
+        COLEMAK {
+            bindings = <
+&trans  &trans  &trans      &colemak_f  &colemak_p  &colemak_b  &colemak_j  &colemak_l  &colemak_u  &colemak_y  &colemak_semi  &trans
+&trans  &trans  &colemak_r  &colemak_s  &colemak_t  &trans      &colemak_m  &colemak_n  &colemak_e  &colemak_i  &colemak_o    &trans
+&trans  &trans  &trans      &trans      &colemak_d  &colemak_v  &colemak_k  &colemak_h  &trans      &trans      &trans        &trans
+                            &trans      &trans      &trans      &trans      &trans      &trans
+            >;
+        };
+
         NAV {
             bindings = <
-&mouse_layer  &kp LC(LS(N2))  &kp LC(LS(N1))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &swapper   &kp LG(TAB)  &kp HOME  &kp UP    &kp END        &kp PG_UP      &kp LC(HOME)
-&tabber       &kp LGUI        &kp LALT        &kp LCTRL         &kp LSHFT          &kp RET    &kp RET      &kp LEFT  &kp DOWN  &kp RIGHT      &kp PG_DN      &kp LC(END)
-&kp LC(Y)     &kp LC(Z)       &kp LC(X)       &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp LG(D)    &kp BSPC  &kp DEL   &kp LC(PG_UP)  &kp LC(PG_DN)  &kp K_APP
-                                              &trans            &trans             &trans     &trans       &trans    &trans
+&mouse_layer  &to_rus    &to_eng    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &swapper   &kp LG(TAB)  &kp HOME  &kp UP    &kp END        &kp PG_UP      &kp LC(HOME)
+&tabber       &kp LGUI   &kp LALT   &kp LCTRL         &kp LSHFT          &kp RET    &kp RET      &kp LEFT  &kp DOWN  &kp RIGHT      &kp PG_DN      &kp LC(END)
+&kp LC(Y)     &kp LC(Z)  &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp LG(D)    &kp BSPC  &kp DEL   &kp LC(PG_UP)  &kp LC(PG_DN)  &kp K_APP
+                                    &trans            &trans             &trans     &trans       &trans    &trans
             >;
         };
 
