@@ -438,7 +438,7 @@
 
         COLEMAK {
             bindings = <
-&trans  &trans  &trans      &colemak_f  &colemak_p  &colemak_b  &colemak_j  &colemak_l  &colemak_u  &colemak_y  &colemak_sqt  &trans
+&trans  &trans  &trans      &colemak_f  &colemak_p  &colemak_b  &colemak_j  &colemak_l  &colemak_u  &colemak_y  &colemak_semi  &trans
 &trans  &trans  &colemak_r  &colemak_s  &colemak_t  &trans      &colemak_m  &colemak_n  &colemak_e  &colemak_i  &colemak_o    &trans
 &trans  &trans  &trans      &trans      &colemak_d  &colemak_v  &colemak_k  &colemak_h  &trans      &trans      &trans        &trans
                             &trans      &trans      &trans      &trans      &trans      &trans
