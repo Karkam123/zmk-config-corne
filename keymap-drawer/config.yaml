@@ -24,8 +24,9 @@ parse_config:
     '&kp LA(LSHFT)': Lang Next
     '&kp LG(TAB)': Task View
     
-    '&kp LC(LS(N2))': RU JCUKEN
-    '&kp LC(LS(N1))': EN QWERTY
+    '&to_rus': RU JCUKEN
+    '&to_colemak': EN COLEMAK
+    '&to_qwerty': EN QWERTY
 
     '&kp LC(LG(LEFT))': Desk Left
     '&kp LC(LG(RIGHT))': Desk Right
