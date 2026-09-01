@@ -1,4 +1,4 @@
-# comment
+// comment
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20   // 10
