@@ -33,10 +33,6 @@ name: name { \
 
 &mt { quick-tap-ms = <200>; };
 
-&caps_word {
-    continue-list = <POUND DOLLAR HASH SEMI NOT MINUS BACKSPACE>;
-};
-
 &mmv {
     acceleration-exponent = <1>;  // 1
     time-to-max-speed-ms = <0>;   // 0
