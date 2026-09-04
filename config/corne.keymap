@@ -203,7 +203,7 @@ name: name { \
         caps: caps {
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS";
-            bindings = <&caps_word_ru>, <&kp CAPS>;
+            bindings = <&kp CAPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
