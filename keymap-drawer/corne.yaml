@@ -130,12 +130,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
-  - ALT \
-  - ALT /
+  - \
+  - /
   - '*'
   - '-'
   - +
-  - {t: 'ALT #', s: (S) №}
+  - '#'
   - ''
   - '7'
   - '8'
@@ -154,7 +154,7 @@ layers:
   - '6'
   - KP .
   - ''
-  - ALT ^
+  - ^
   - A
   - B
   - C
@@ -173,42 +173,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
-  - ALT \
-  - ALT /
+  - '`'
+  - '~'
   - '*'
   - {t: '-', s: (S) NB}
   - +
-  - {t: 'ALT #', s: (S) №}
-  - ALT "
-  - 'ALT :'
-  - ALT ;
+  - \
+  - '"'
+  - ':'
+  - ;
   - _
-  - ALT ?
-  - ALT ~
+  - '?'
+  - '|'
   - '%'
-  - ALT <
-  - ALT {
-  - ALT [
+  - <
+  - '{'
+  - '['
   - (
-  - {t: ALT $, s: (S) ₽}
-  - ALT '
+  - ^
+  - ''''
   - Shift
   - Ctrl
   - Alt
   - Gui
-  - ALT &
-  - ALT ^
-  - ALT >
-  - ALT }
-  - ALT ]
+  - '&'
+  - '@'
+  - '>'
+  - '}'
+  - ']'
   - )
-  - ALT @
-  - ALT `
-  - ALT .
-  - ALT ,
+  - $
+  - '#'
+  - .
+  - ','
   - '='
   - '!'
-  - ALT |
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
