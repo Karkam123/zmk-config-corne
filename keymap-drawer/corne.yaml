@@ -131,16 +131,16 @@ layers:
   - {t: ▽, type: trans}
   NUM:
   - '&sym_backslash'
-  - '&sym_slash'
-  - '&sym_asterisk'
-  - '&sym_dash'
-  - '&sym_plus'
-  - '&sym_n3'
   - '&sym_slash_en'
+  - '&sym_n7_en'
+  - '&sym_equal_en'
+  - '&sym_question_en'
+  - '&sym_n3'
+  - '&sym_asterisk'
   - '7'
   - '8'
   - '9'
-  - '&sym_equal_en'
+  - '&sym_n3'
   - ''
   - '&sym_percent'
   - Gui
@@ -148,7 +148,7 @@ layers:
   - Ctrl
   - Shift
   - F
-  - '&sym_n7_en'
+  - '&sym_dash'
   - '4'
   - '5'
   - '6'
@@ -160,7 +160,7 @@ layers:
   - C
   - D
   - E
-  - '&sym_question_en'
+  - '&sym_plus'
   - '1'
   - '2'
   - '3'
