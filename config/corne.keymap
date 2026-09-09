@@ -134,7 +134,7 @@ name: name { \
             bindings = <&macro_tap>, <&mouse_mode_reset &tog_off L_MOUSE>;
         };
 
-        // ========== МАКРОСЫ ДЛЯ СЛОЯ SYM ==========
+                // ========== МАКРОСЫ ДЛЯ СЛОЯ SYM ==========
         // Все макросы переключаются на английскую раскладку,
         // отправляют символ и возвращаются на русскую
         
@@ -145,8 +145,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp BACKSLASH>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp BACKSLASH>;
                 <&macro_tap &to_rus>;
         };
 
@@ -156,8 +156,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp SLASH>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp SLASH>;
                 <&macro_tap &to_rus>;
         };
 
@@ -167,8 +167,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp ASTRK>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp ASTRK>;
                 <&macro_tap &to_rus>;
         };
 
@@ -178,8 +178,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp MINUS>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp MINUS>;
                 <&macro_tap &to_rus>;
         };
 
@@ -189,8 +189,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp PLUS>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp PLUS>;
                 <&macro_tap &to_rus>;
         };
 
@@ -200,8 +200,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp DOUBLE_QUOTES>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp DOUBLE_QUOTES>;
                 <&macro_tap &to_rus>;
         };
 
@@ -211,8 +211,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp COLON>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp COLON>;
                 <&macro_tap &to_rus>;
         };
 
@@ -222,8 +222,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp SEMICOLON>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp SEMICOLON>;
                 <&macro_tap &to_rus>;
         };
 
@@ -233,8 +233,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp UNDERSCORE>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp UNDERSCORE>;
                 <&macro_tap &to_rus>;
         };
 
@@ -244,8 +244,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp QUESTION>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp QUESTION>;
                 <&macro_tap &to_rus>;
         };
 
@@ -255,8 +255,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp TILDE>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp TILDE>;
                 <&macro_tap &to_rus>;
         };
 
@@ -267,8 +267,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp PERCENT>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp PERCENT>;
                 <&macro_tap &to_rus>;
         };
 
@@ -278,8 +278,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp LESS_THAN>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp LESS_THAN>;
                 <&macro_tap &to_rus>;
         };
 
@@ -289,8 +289,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp LEFT_BRACE>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp LEFT_BRACE>;
                 <&macro_tap &to_rus>;
         };
 
@@ -300,8 +300,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp LEFT_BRACKET>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp LEFT_BRACKET>;
                 <&macro_tap &to_rus>;
         };
 
@@ -311,8 +311,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp LPAR>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp LPAR>;
                 <&macro_tap &to_rus>;
         };
 
@@ -322,8 +322,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp SINGLE_QUOTE>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp SINGLE_QUOTE>;
                 <&macro_tap &to_rus>;
         };
 
@@ -333,8 +333,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp GRAVE>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp GRAVE>;
                 <&macro_tap &to_rus>;
         };
 
@@ -344,8 +344,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp DOT>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp DOT>;
                 <&macro_tap &to_rus>;
         };
 
@@ -355,8 +355,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp COMMA>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp COMMA>;
                 <&macro_tap &to_rus>;
         };
 
@@ -366,8 +366,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp EQUAL>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp EQUAL>;
                 <&macro_tap &to_rus>;
         };
 
@@ -377,8 +377,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp EXCL>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp EXCL>;
                 <&macro_tap &to_rus>;
         };
 
@@ -388,8 +388,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp PIPE>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp PIPE>;
                 <&macro_tap &to_rus>;
         };
 
@@ -400,8 +400,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp RPAR>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp RPAR>;
                 <&macro_tap &to_rus>;
         };
 
@@ -411,8 +411,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp GREATER_THAN>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp GREATER_THAN>;
                 <&macro_tap &to_rus>;
         };
 
@@ -422,8 +422,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp RIGHT_BRACE>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp RIGHT_BRACE>;
                 <&macro_tap &to_rus>;
         };
 
@@ -433,8 +433,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp RIGHT_BRACKET>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp RIGHT_BRACKET>;
                 <&macro_tap &to_rus>;
         };
 
@@ -444,8 +444,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp N2>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp N2>;
                 <&macro_tap &to_rus>;
         };
 
@@ -455,8 +455,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp N3>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp N3>;
                 <&macro_tap &to_rus>;
         };
 
@@ -466,8 +466,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp N4>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp N4>;
                 <&macro_tap &to_rus>;
         };
 
@@ -477,8 +477,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp N6>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp N6>;
                 <&macro_tap &to_rus>;
         };
 
@@ -488,8 +488,8 @@ name: name { \
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = 
-                <&macro_tap &to_qwerty>
-                <&macro_tap &kp N7>
+                <&macro_tap &to_qwerty>;
+                <&macro_tap &kp N7>;
                 <&macro_tap &to_rus>;
         };
     };
