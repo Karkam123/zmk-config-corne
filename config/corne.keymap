@@ -590,9 +590,9 @@ name: name { \
 
         NUM {
             bindings = <
-&sym_backslash  &sym_slash  &sym_asterisk  &sym_dash  &sym_plus   &sym_n3  &sym_slash_en      &kp N7     &kp N8  &kp N9  &sym_equal_en       &none
-&sym_percent    &kp LGUI    &kp LALT       &kp LCTRL  &kp LSHFT   &kp F    &sym_n7_en         &kp N4     &kp N5  &kp N6  &kp KP_DOT  &none
-&sym_n6         &kp A       &kp B          &kp C      &kp D       &kp E    &sym_question_en   &kp N1  &kp N2  &kp N3  &kp N0      &none
+&sym_backslash  &sym_slash_en  &sym_n7_en  &sym_equal_en  &sym_question_en   &sym_n3  &sym_asterisk      &kp N7     &kp N8  &kp N9  &sym_n3       &none
+&sym_percent    &kp LGUI    &kp LALT       &kp LCTRL  &kp LSHFT   &kp F           &sym_dash         &kp N4     &kp N5  &kp N6  &kp KP_DOT  &none
+&sym_n6         &kp A       &kp B          &kp C      &kp D       &kp E           &sym_plus   &kp N1  &kp N2  &kp N3  &kp N0      &none
                                              &trans   &trans      &trans   &trans  &trans  &trans
             >;
         };
