@@ -136,11 +136,11 @@ layers:
   - '&sym_dash'
   - '&sym_plus'
   - '&sym_n3'
-  - ''
+  - '&sym_slash_en'
   - '7'
   - '8'
   - '9'
-  - ''
+  - '&sym_equal_en'
   - ''
   - '&sym_percent'
   - Gui
@@ -148,7 +148,7 @@ layers:
   - Ctrl
   - Shift
   - F
-  - ''
+  - '&sym_n7_en'
   - '4'
   - '5'
   - '6'
@@ -160,7 +160,7 @@ layers:
   - C
   - D
   - E
-  - ''
+  - '&sym_question_en'
   - '1'
   - '2'
   - '3'
