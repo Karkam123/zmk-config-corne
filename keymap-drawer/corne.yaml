@@ -130,19 +130,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
-  - \
-  - /
-  - '*'
-  - '-'
-  - +
-  - _
+  - '&sym_backslash'
+  - '&sym_slash'
+  - '&sym_asterisk'
+  - '&sym_dash'
+  - '&sym_plus'
+  - '&sym_n3'
   - ''
   - '7'
   - '8'
   - '9'
   - ''
   - ''
-  - '%'
+  - '&sym_percent'
   - Gui
   - Alt
   - Ctrl
@@ -154,7 +154,7 @@ layers:
   - '6'
   - KP .
   - ''
-  - ^
+  - '&sym_n6'
   - A
   - B
   - C
@@ -173,42 +173,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
-  - \
-  - /
-  - '*'
-  - {t: '-', s: (S) NB}
-  - +
+  - '&sym_backslash'
+  - '&sym_slash'
+  - '&sym_asterisk'
+  - '&sym_dash'
+  - '&sym_plus'
   - '#'
-  - '"'
-  - ':'
-  - ;
-  - _
-  - '?'
-  - '~'
-  - '%'
-  - <
-  - '{'
-  - '['
-  - (
-  - $
-  - ''''
+  - '&sym_double_quotes'
+  - '&sym_colon'
+  - '&sym_semicolon'
+  - '&sym_underscore'
+  - '&sym_question'
+  - '&sym_tilde'
+  - '&sym_percent'
+  - '&sym_less_than'
+  - '&sym_left_brace'
+  - '&sym_left_bracket'
+  - '&sym_lpar'
+  - '&sym_n4'
+  - '&sym_single_quote'
   - Shift
   - Ctrl
   - Alt
   - Gui
-  - '&'
-  - ^
-  - '>'
-  - '}'
-  - ']'
-  - )
-  - '@'
-  - '`'
-  - .
-  - ','
-  - '='
-  - '!'
-  - '|'
+  - '&sym_n7'
+  - '&sym_n6'
+  - '&sym_greater_than'
+  - '&sym_right_brace'
+  - '&sym_right_bracket'
+  - '&sym_rpar'
+  - '&sym_n2'
+  - '&sym_grave'
+  - '&sym_dot'
+  - '&sym_comma'
+  - '&sym_equal'
+  - '&sym_excl'
+  - '&sym_pipe'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
