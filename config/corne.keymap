@@ -144,10 +144,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp BACKSLASH>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp BACKSLASH>, <&macro_tap &to_rus>;
         };
 
         sym_slash: sym_slash {
@@ -155,10 +152,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp SLASH>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp SLASH>, <&macro_tap &to_rus>;
         };
 
         sym_asterisk: sym_asterisk {
@@ -166,10 +160,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp ASTRK>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp ASTRK>, <&macro_tap &to_rus>;
         };
 
         sym_dash: sym_dash {
@@ -177,10 +168,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp MINUS>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp MINUS>, <&macro_tap &to_rus>;
         };
 
         sym_plus: sym_plus {
@@ -188,10 +176,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp PLUS>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp PLUS>, <&macro_tap &to_rus>;
         };
 
         sym_double_quotes: sym_double_quotes {
@@ -199,10 +184,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp DOUBLE_QUOTES>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp DOUBLE_QUOTES>, <&macro_tap &to_rus>;
         };
 
         sym_colon: sym_colon {
@@ -210,10 +192,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp COLON>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp COLON>, <&macro_tap &to_rus>;
         };
 
         sym_semicolon: sym_semicolon {
@@ -221,10 +200,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp SEMICOLON>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp SEMICOLON>, <&macro_tap &to_rus>;
         };
 
         sym_underscore: sym_underscore {
@@ -232,10 +208,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp UNDERSCORE>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp UNDERSCORE>, <&macro_tap &to_rus>;
         };
 
         sym_question: sym_question {
@@ -243,10 +216,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp QUESTION>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp QUESTION>, <&macro_tap &to_rus>;
         };
 
         sym_tilde: sym_tilde {
@@ -254,10 +224,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp TILDE>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp TILDE>, <&macro_tap &to_rus>;
         };
 
         // --- Строка 2 ---
@@ -266,10 +233,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp PERCENT>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp PERCENT>, <&macro_tap &to_rus>;
         };
 
         sym_less_than: sym_less_than {
@@ -277,10 +241,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp LESS_THAN>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp LESS_THAN>, <&macro_tap &to_rus>;
         };
 
         sym_left_brace: sym_left_brace {
@@ -288,10 +249,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp LEFT_BRACE>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp LEFT_BRACE>, <&macro_tap &to_rus>;
         };
 
         sym_left_bracket: sym_left_bracket {
@@ -299,10 +257,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp LEFT_BRACKET>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp LEFT_BRACKET>, <&macro_tap &to_rus>;
         };
 
         sym_lpar: sym_lpar {
@@ -310,10 +265,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp LPAR>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp LPAR>, <&macro_tap &to_rus>;
         };
 
         sym_single_quote: sym_single_quote {
@@ -321,10 +273,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp SINGLE_QUOTE>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp SINGLE_QUOTE>, <&macro_tap &to_rus>;
         };
 
         sym_grave: sym_grave {
@@ -332,10 +281,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp GRAVE>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp GRAVE>, <&macro_tap &to_rus>;
         };
 
         sym_dot: sym_dot {
@@ -343,10 +289,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp DOT>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp DOT>, <&macro_tap &to_rus>;
         };
 
         sym_comma: sym_comma {
@@ -354,10 +297,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp COMMA>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp COMMA>, <&macro_tap &to_rus>;
         };
 
         sym_equal: sym_equal {
@@ -365,10 +305,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp EQUAL>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp EQUAL>, <&macro_tap &to_rus>;
         };
 
         sym_excl: sym_excl {
@@ -376,10 +313,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp EXCL>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp EXCL>, <&macro_tap &to_rus>;
         };
 
         sym_pipe: sym_pipe {
@@ -387,10 +321,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp PIPE>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp PIPE>, <&macro_tap &to_rus>;
         };
 
         // --- Строка 3 (дополнительные) ---
@@ -399,10 +330,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp RPAR>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp RPAR>, <&macro_tap &to_rus>;
         };
 
         sym_greater_than: sym_greater_than {
@@ -410,10 +338,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp GREATER_THAN>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp GREATER_THAN>, <&macro_tap &to_rus>;
         };
 
         sym_right_brace: sym_right_brace {
@@ -421,10 +346,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp RIGHT_BRACE>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp RIGHT_BRACE>, <&macro_tap &to_rus>;
         };
 
         sym_right_bracket: sym_right_bracket {
@@ -432,10 +354,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp RIGHT_BRACKET>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp RIGHT_BRACKET>, <&macro_tap &to_rus>;
         };
 
         sym_n2: sym_n2 {
@@ -443,10 +362,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp N2>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp N2>, <&macro_tap &to_rus>;
         };
 
         sym_n3: sym_n3 {
@@ -454,10 +370,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp N3>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp N3>, <&macro_tap &to_rus>;
         };
 
         sym_n4: sym_n4 {
@@ -465,10 +378,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp N4>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp N4>, <&macro_tap &to_rus>;
         };
 
         sym_n6: sym_n6 {
@@ -476,10 +386,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp N6>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp N6>, <&macro_tap &to_rus>;
         };
 
         sym_n7: sym_n7 {
@@ -487,10 +394,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = 
-                <&macro_tap &to_qwerty>;
-                <&macro_tap &kp N7>;
-                <&macro_tap &to_rus>;
+            bindings = <&macro_tap &to_qwerty>, <&macro_tap &kp N7>, <&macro_tap &to_rus>;
         };
     };
 
