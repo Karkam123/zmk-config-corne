@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/tokyo2006
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: cormoran
+      url-base: https://github.com/cormoran
 
   projects:
     - name: zmk
