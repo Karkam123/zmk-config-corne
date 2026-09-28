@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/dhruvinsh
     - name: idefant
       url-base: https://github.com/idefant
-    - name: cormoran
-      url-base: https://github.com/cormoran
     - name: gpeye
       url-base: https://github.com/GPeye
     - name: tokyo2006
@@ -26,21 +24,6 @@ manifest:
     - name: zmk-caps-word-ru
       remote: idefant
       revision: main
-    - name: zmk-behavior-runtime-sensor-rotate
-      remote: cormoran
-      revision: zmk-v0.3.0.0
-    - name: zmk-module-ble-management
-      remote: cormoran
-      revision: zmk-v0.3.0.0
-    - name: zmk-module-battery-history
-      remote: cormoran
-      revision: main
-    - name: zmk-module-settings-rpc
-      remote: cormoran
-      revision: zmk-v0.3.0.0
-    - name: zmk-module-runtime-input-processor
-      remote: cormoran
-      revision: zmk-v0.3.0.0
     - name: hammerbeam-slideshow
       remote: gpeye
       revision: main
