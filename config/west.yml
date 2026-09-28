@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/dhruvinsh
     - name: idefant
       url-base: https://github.com/idefant
-    - name: cormoran
-      url-base: https://github.com/cormoran
     - name: gpeye
       url-base: https://github.com/GPeye
     - name: tokyo2006
