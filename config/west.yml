@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/dhruvinsh
     - name: idefant
       url-base: https://github.com/idefant
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,10 +15,12 @@ manifest:
       import: app/west.yml
     - name: zmk-tri-state
       remote: dhruvinsh
-      revision: ebbc1f0ccdb51669650bb0ac3e34920d09e62400 # Mar 17, 2025, 12:01 AM GMT+5
+      revision: ebbc1f0ccdb51669650bb0ac3e34920d09e62400
     - name: zmk-caps-word-ru
       remote: idefant
       revision: main
-
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: v0.3
   self:
     path: config
