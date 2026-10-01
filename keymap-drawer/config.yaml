@@ -13,8 +13,10 @@ draw_config:
   dark_mode: auto
 
 # configuration for https://github.com/caksoylar/keymap-drawer
+
 parse_config:
   zmk_preamble: "#define KEYMAP_DRAWER"
+
   raw_binding_map:
     '&sys_reset': Reset
     '&bootloader': Boot
@@ -23,7 +25,7 @@ parse_config:
     '&caps_word_ru': Caps Word
     '&kp LA(LSHFT)': Lang Next
     '&kp LG(TAB)': Task View
-    
+
     '&to_rus': RU JCUKEN
     '&to_colemak': EN COLEMAK
     '&to_qwerty': EN QWERTY
@@ -37,7 +39,7 @@ parse_config:
     '&kp LC(PG_UP)': Prev Tab
     '&kp LC(PG_DN)': Next Tab
     '&kp K_APP': Menu
-    
+
     '&kp LG(LS(S))': Snipping Tool
     '&kp LG(V)': Clip board
     '&kp LG(D)': Show Desk
@@ -68,33 +70,62 @@ parse_config:
     '&mkp MB4': Back Click
     '&mkp MB5': Forward Click
 
-    # Alt codes
-    '&kp RA(SINGLE_QUOTE)': "ALT '"
-    '&kp RA(DOUBLE_QUOTES)': 'ALT "'
-    '&kp RA(GRAVE)': 'ALT `'
-    '&kp RA(LEFT_BRACKET)': 'ALT ['
-    '&kp RA(RIGHT_BRACKET)': 'ALT ]'
-    '&kp RA(LEFT_BRACE)': 'ALT {'
-    '&kp RA(RIGHT_BRACE)': 'ALT }'
-    '&kp RA(LESS_THAN)': 'ALT <'
-    '&kp RA(GREATER_THAN)': 'ALT >'
-    '&kp RA(COMMA)': 'ALT ,'
-    '&kp RA(DOT)': 'ALT .'
-    '&kp RA(COLON)': 'ALT :'
-    '&kp RA(SEMICOLON)': 'ALT ;'
-    '&kp RA(N7)': 'ALT &'
-    '&kp RA(PIPE)': 'ALT |'
-    '&kp RA(N4)': {t: 'ALT $', s: '(S) ₽'}
-    '&kp RA(N3)': {t: 'ALT #', s: '(S) №'}
-    '&kp RA(N2)': 'ALT @'
-    '&kp RA(TILDE)': 'ALT ~'
-    '&kp RA(N6)': 'ALT ^'
-    '&kp RA(QUESTION)': 'ALT ?'
-    '&kp RA(SLASH)': 'ALT /'
-    '&kp RA(BACKSLASH)': 'ALT \'
+    # ---- AltGr-символы (показываем сам символ, а не "ALT x") ----
+    # Старые RA(...) — на случай, если где-то ещё остались
+    '&kp RA(SINGLE_QUOTE)': "'"
+    '&kp RA(DOUBLE_QUOTES)': '"'
+    '&kp RA(GRAVE)': '`'
+    '&kp RA(LEFT_BRACKET)': '['
+    '&kp RA(RIGHT_BRACKET)': ']'
+    '&kp RA(LEFT_BRACE)': '{'
+    '&kp RA(RIGHT_BRACE)': '}'
+    '&kp RA(LESS_THAN)': '<'
+    '&kp RA(GREATER_THAN)': '>'
+    '&kp RA(COMMA)': ','
+    '&kp RA(DOT)': '.'
+    '&kp RA(COLON)': ':'
+    '&kp RA(SEMICOLON)': ';'
+    '&kp RA(N7)': '&'
+    '&kp RA(PIPE)': '|'
+    '&kp RA(N4)': { t: '$', s: '(S) ₽' }
+    '&kp RA(N3)': { t: '#', s: '(S) №' }
+    '&kp RA(N2)': '@'
+    '&kp RA(TILDE)': '~'
+    '&kp RA(N6)': '^'
+    '&kp RA(QUESTION)': '?'
+    '&kp RA(SLASH)': '/'
+    '&kp RA(BACKSLASH)': '\'
 
-    '&alt_dash': {t: '-', s: (S) NB}
-    '&alt_space': {t: '␣', s: (CA) NB}
+    # Новые LC(LA(...)) — эмуляция AltGr через Ctrl+Alt
+    '&kp LC(LA(BACKSLASH))': '\'
+    '&kp LC(LA(SLASH))': '/'
+    '&kp LC(LA(N3))': { t: '#', s: '(S) №' }
+    '&kp LC(LA(N4))': { t: '$', s: '(S) ₽' }
+    '&kp LC(LA(N6))': '^'
+    '&kp LC(LA(N2))': '@'
+    '&kp LC(LA(SEMI))': ':'
+    '&kp LC(LA(TILDE))': '~'
+    '&kp LC(LA(SQT))': "'"
+    '&kp LC(LA(DOT))': '.'
+    '&kp LC(LA(COMMA))': ','
+    '&kp LC(LA(LBKT))': '['
+    '&kp LC(LA(RBKT))': ']'
+
+    # LC(LA(LS(...))) — AltGr + Shift + ...
+    '&kp LC(LA(LS(N2)))': '"'
+    '&kp LC(LA(LS(N4)))': ';'
+    '&kp LC(LA(LS(N6)))': '^'
+    '&kp LC(LA(LS(N7)))': '&'
+    '&kp LC(LA(LS(COMMA)))': '<'
+    '&kp LC(LA(LS(DOT)))': '>'
+    '&kp LC(LA(LS(LBKT)))': '{'
+    '&kp LC(LA(LS(RBKT)))': '}'
+    '&kp LC(LA(LS(GRAVE)))': '`'
+    '&kp LC(LA(LS(BACKSLASH)))': '|'
+
+    # ---- Прочие behaviours ----
+    '&alt_dash': { t: '-', s: (S) NB }
+    '&alt_space': { t: '␣', s: (CA) NB }
 
     '&kp LC(Z)': Undo
     '&kp LC(Y)': Redo
@@ -105,7 +136,7 @@ parse_config:
     '&kp LC(EQUAL)': Zoom In
     '&kp LC(MINUS)': Zoom Out
     '&kp LC(N0)': Zoom Default
-    
+
     '&mouse_layer': MOUSE
     '&slow_mouse_mode': Slow Mouse Mode
     '&fast_mouse_mode': Fast Mouse Mode
@@ -214,9 +245,9 @@ parse_config:
     RPAR: )
     SEMI: ;
     SEMICOLON: ;
-    SINGLE_QUOTE: ''''
+    SINGLE_QUOTE: "'"
     SLASH: /
-    SQT: ''''
+    SQT: "'"
     STAR: '*'
     TILDE: '~'
     TILDE2: '~'
