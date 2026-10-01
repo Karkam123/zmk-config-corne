@@ -289,18 +289,18 @@ name: name { \
 
         NUM {
             bindings = <
-&kp RA(BACKSLASH)  &kp RA(SLASH)  &kp ASTRK  &kp MINUS  &kp PLUS   &kp RA(N3)  &none   &kp N7  &kp N8  &kp N9  &none       &none
-&kp PERCENT        &kp LGUI       &kp LALT   &kp LCTRL  &kp LSHFT  &kp F       &none   &kp N4  &kp N5  &kp N6  &kp KP_DOT  &none
-&kp RA(N6)         &kp A          &kp B      &kp C      &kp D      &kp E       &none   &kp N1  &kp N2  &kp N3  &kp N0      &none
-                                             &trans     &trans     &trans      &trans  &trans  &trans
+&kp LC(LA(BACKSLASH))  &kp LC(LA(SLASH))  &kp ASTRK  &kp MINUS  &kp PLUS  &kp LC(LA(N3))  &none   &kp N7  &kp N8  &kp N9  &none       &none
+&kp PERCENT            &kp LGUI           &kp LALT   &kp LCTRL  &kp LSHFT  &kp F           &none   &kp N4  &kp N5  &kp N6  &kp KP_DOT  &none
+&kp LC(LA(N6))         &kp A              &kp B      &kp C      &kp D      &kp E           &none   &kp N1  &kp N2  &kp N3  &kp N0      &none
+                                             &trans     &trans     &trans     &trans  &trans  &trans
             >;
         };
 
         SYM {
             bindings = <
-&kp RA(BACKSLASH)  &kp RA(SLASH)         &kp ASTRK            &alt_dash              &kp PLUS  &kp RA(N3)  &kp RA(DOUBLE_QUOTES)  &kp RA(COLON)  &kp RA(SEMICOLON)  &kp UNDERSCORE  &kp QUESTION  &kp RA(TILDE)
-&kp PERCENT        &kp RA(LESS_THAN)     &kp RA(LEFT_BRACE)   &kp RA(LEFT_BRACKET)   &kp LPAR  &kp RA(N4)  &kp RA(SINGLE_QUOTE)   &kp LSHFT      &kp LCTRL          &kp LALT        &kp LGUI          &kp RA(N7)
-&kp RA(N6)         &kp RA(GREATER_THAN)  &kp RA(RIGHT_BRACE)  &kp RA(RIGHT_BRACKET)  &kp RPAR  &kp RA(N2)  &kp RA(GRAVE)          &kp RA(DOT)    &kp RA(COMMA)      &kp EQUAL       &kp EXCL          &kp RA(PIPE)
+&kp LC(LA(BACKSLASH))  &kp LC(LA(SLASH))         &kp ASTRK            &alt_dash              &kp PLUS  &kp LC(LA(N3))  &kp LC(LA(LS(N2)))  &kp LC(LA(SEMI))  &kp LC(LA(LS(N4)))  &kp UNDERSCORE  &kp QUESTION  &kp LC(LA(TILDE))
+&kp PERCENT            &kp LC(LA(LS(COMMA)))     &kp LC(LA(LS(LBKT))) &kp LC(LA(LBKT))       &kp LPAR  &kp LC(LA(N4))  &kp LC(LA(SQT))     &kp LSHFT      &kp LCTRL          &kp LALT        &kp LGUI          &kp LC(LA(LS(N7)))
+&kp LC(LA(LS(N6)))     &kp LC(LA(LS(DOT)))       &kp LC(LA(LS(RBKT))) &kp LC(LA(RBKT))       &kp RPAR  &kp LC(LA(LS(N2)))  &kp LC(LA(LS(GRAVE)))  &kp LC(LA(DOT))    &kp LC(LA(COMMA))      &kp EQUAL       &kp EXCL          &kp LC(LA(LS(BACKSLASH)))
                                                               &trans                 &trans    &trans      &trans                 &trans         &trans
             >;
         };
