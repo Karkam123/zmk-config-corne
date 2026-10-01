@@ -132,17 +132,17 @@ layers:
   NUM:
   - ALT \
   - ALT /
-  - '*'
-  - '-'
-  - +
-  - {t: 'ALT #', s: (S) №}
+  - Sft+8
+  - AltGr+-
+  - AltGr+Sft+=
+  - Sft+3
   - ''
   - '7'
   - '8'
   - '9'
   - ''
   - ''
-  - '%'
+  - Sft+5
   - Gui
   - Alt
   - Ctrl
@@ -154,7 +154,7 @@ layers:
   - '6'
   - KP .
   - ''
-  - ALT ^
+  - AltGr+Sft+6
   - A
   - B
   - C
@@ -175,40 +175,40 @@ layers:
   SYM:
   - ALT \
   - ALT /
-  - '*'
-  - {t: '-', s: (S) NB}
-  - +
-  - {t: 'ALT #', s: (S) №}
-  - ALT "
-  - 'ALT :'
-  - ALT ;
-  - _
-  - ALT ?
-  - ALT ~
-  - '%'
-  - ALT <
-  - ALT {
-  - ALT [
-  - (
-  - {t: ALT $, s: (S) ₽}
-  - ALT '
+  - Sft+8
+  - AltGr+-
+  - AltGr+Sft+=
+  - Sft+3
+  - AltGr+Sft+2
+  - AltGr+Sft+;
+  - AltGr+Sft+4
+  - AltGr+Sft+-
+  - AltGr+Sft+/
+  - AltGr+Sft+`
+  - Sft+5
+  - AltGr+Sft+,
+  - AltGr+Sft+[
+  - AltGr+[
+  - Sft+9
+  - Sft+4
+  - AltGr+'
   - Shift
   - Ctrl
   - Alt
   - Gui
-  - ALT &
-  - ALT ^
-  - ALT >
-  - ALT }
-  - ALT ]
-  - )
-  - ALT @
-  - ALT `
-  - ALT .
-  - ALT ,
-  - '='
-  - '!'
-  - ALT |
+  - AltGr+Sft+7
+  - AltGr+Sft+6
+  - AltGr+Sft+.
+  - AltGr+Sft+]
+  - AltGr+]
+  - Sft+0
+  - AltGr+Sft+2
+  - AltGr+Sft+`
+  - AltGr+Sft+.
+  - AltGr+Sft+,
+  - Sft+=
+  - Sft+1
+  - AltGr+Sft+\
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
