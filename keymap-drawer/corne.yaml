@@ -100,7 +100,7 @@ layers:
   - Page Up
   - First Line
   - Tabber
-  - Gui
+  - Save
   - Alt
   - Ctrl
   - Shift
@@ -174,8 +174,8 @@ layers:
   - {t: ▽, type: trans}
   SYM:
   - '`'
-  - '~'
   - '*'
+  - '&uc 0x002D 0x2013'
   - {t: '-', s: (S) NB}
   - +
   - \
@@ -216,7 +216,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   FUNC:
-  - ''
+  - admin
   - F1
   - F2
   - F3
@@ -228,7 +228,7 @@ layers:
   - ''
   - ''
   - Win Close
-  - ''
+  - serucity
   - F5
   - F6
   - F7
@@ -239,8 +239,8 @@ layers:
   - Ctrl
   - Alt
   - Gui
-  - ''
-  - ''
+  - root
+  - scr1
   - F9
   - F10
   - F11
@@ -251,7 +251,7 @@ layers:
   - Vol Up
   - Snipping Tool
   - Print Screen
-  - ''
+  - scr2
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
