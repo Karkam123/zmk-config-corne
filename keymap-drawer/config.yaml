@@ -1,20 +1,13 @@
 # Optional configuration for keymap-drawer.
-# You can leave this file as-is; it mainly exists so the workflow can be customized later.
 # Docs: https://github.com/caksoylar/keymap-drawer/blob/main/CONFIGURATION.md
 
-# parse_config:
-#   # ZMK keymaps are preprocessed; this just keeps the defaults explicit.
-#   zmk_preamble: "#define KEYMAP_DRAWER"
-
 draw_config:
-  # Keep defaults. Add styling / glyphs later if you want.
-  # style_layer_activators: false
   shrink_wide_legends: 11
   dark_mode: auto
 
-# configuration for https://github.com/caksoylar/keymap-drawer
 parse_config:
   zmk_preamble: "#define KEYMAP_DRAWER"
+
   raw_binding_map:
     '&sys_reset': Reset
     '&bootloader': Boot
@@ -23,7 +16,7 @@ parse_config:
     '&caps_word_ru': Caps Word
     '&kp LA(LSHFT)': Lang Next
     '&kp LG(TAB)': Task View
-    
+
     '&to_rus': RU JCUKEN
     '&to_colemak': EN COLEMAK
     '&to_qwerty': EN QWERTY
@@ -37,7 +30,7 @@ parse_config:
     '&kp LC(PG_UP)': Prev Tab
     '&kp LC(PG_DN)': Next Tab
     '&kp K_APP': Menu
-    
+
     '&kp LG(LS(S))': Snipping Tool
     '&kp LG(V)': Clip board
     '&kp LG(D)': Show Desk
@@ -68,30 +61,30 @@ parse_config:
     '&mkp MB4': Back Click
     '&mkp MB5': Forward Click
 
-    # Alt codes
-    '&kp RA(SINGLE_QUOTE)': "ALT '"
-    '&kp RA(DOUBLE_QUOTES)': 'ALT "'
-    '&kp RA(GRAVE)': 'ALT `'
-    '&kp RA(LEFT_BRACKET)': 'ALT ['
-    '&kp RA(RIGHT_BRACKET)': 'ALT ]'
-    '&kp RA(LEFT_BRACE)': 'ALT {'
-    '&kp RA(RIGHT_BRACE)': 'ALT }'
-    '&kp RA(LESS_THAN)': 'ALT <'
-    '&kp RA(GREATER_THAN)': 'ALT >'
-    '&kp RA(COMMA)': 'ALT ,'
-    '&kp RA(DOT)': 'ALT .'
-    '&kp RA(COLON)': 'ALT :'
-    '&kp RA(SEMICOLON)': 'ALT ;'
-    '&kp RA(N7)': 'ALT &'
-    '&kp RA(PIPE)': 'ALT |'
-    '&kp RA(N4)': {t: 'ALT $', s: '(S) ₽'}
-    '&kp RA(N3)': {t: 'ALT #', s: '(S) №'}
-    '&kp RA(N2)': 'ALT @'
-    '&kp RA(TILDE)': 'ALT ~'
-    '&kp RA(N6)': 'ALT ^'
-    '&kp RA(QUESTION)': 'ALT ?'
-    '&kp RA(SLASH)': 'ALT /'
-    '&kp RA(BACKSLASH)': 'ALT \'
+    # ---- Старые AltGr-символы (на случай, если где-то остались) ----
+    '&kp RA(SINGLE_QUOTE)': "'"
+    '&kp RA(DOUBLE_QUOTES)': '"'
+    '&kp RA(GRAVE)': '`'
+    '&kp RA(LEFT_BRACKET)': '['
+    '&kp RA(RIGHT_BRACKET)': ']'
+    '&kp RA(LEFT_BRACE)': '{'
+    '&kp RA(RIGHT_BRACE)': '}'
+    '&kp RA(LESS_THAN)': '<'
+    '&kp RA(GREATER_THAN)': '>'
+    '&kp RA(COMMA)': ','
+    '&kp RA(DOT)': '.'
+    '&kp RA(COLON)': ':'
+    '&kp RA(SEMICOLON)': ';'
+    '&kp RA(N7)': '&'
+    '&kp RA(PIPE)': '|'
+    '&kp RA(N4)': {t: '$', s: '(S) ₽'}
+    '&kp RA(N3)': {t: '#', s: '(S) №'}
+    '&kp RA(N2)': '@'
+    '&kp RA(TILDE)': '~'
+    '&kp RA(N6)': '^'
+    '&kp RA(QUESTION)': '?'
+    '&kp RA(SLASH)': '/'
+    '&kp RA(BACKSLASH)': '\'
 
     '&alt_dash': {t: '-', s: (S) NB}
     '&alt_space': {t: '␣', s: (CA) NB}
@@ -105,7 +98,7 @@ parse_config:
     '&kp LC(EQUAL)': Zoom In
     '&kp LC(MINUS)': Zoom Out
     '&kp LC(N0)': Zoom Default
-    
+
     '&mouse_layer': MOUSE
     '&slow_mouse_mode': Slow Mouse Mode
     '&fast_mouse_mode': Fast Mouse Mode
@@ -117,7 +110,7 @@ parse_config:
     bt_right_combo: { align: bottom }
 
   zmk_keycode_map:
-    # custom mappings
+    # ---- Кастомные подписи ----
     C_VOL_UP: Vol Up
     C_VOL_DN: Vol Down
     C_BRI_UP: Bright Up
@@ -157,7 +150,65 @@ parse_config:
     C_NEXT: ⏭️
     C_PREV: ⏮️
 
-    # defaults
+    # ---- Буквы: латиница + кириллица (ЙЦУКЕН) ----
+    Q: {t: 'Q', s: 'Й'}
+    W: {t: 'W', s: 'Ц'}
+    E: {t: 'E', s: 'У'}
+    R: {t: 'R', s: 'К'}
+    T: {t: 'T', s: 'Е'}
+    Y: {t: 'Y', s: 'Н'}
+    U: {t: 'U', s: 'Г'}
+    I: {t: 'I', s: 'Ш'}
+    O: {t: 'O', s: 'Щ'}
+    P: {t: 'P', s: 'З'}
+
+    A: {t: 'A', s: 'Ф'}
+    S: {t: 'S', s: 'Ы'}
+    D: {t: 'D', s: 'В'}
+    F: {t: 'F', s: 'А'}
+    G: {t: 'G', s: 'П'}
+    H: {t: 'H', s: 'Р'}
+    J: {t: 'J', s: 'О'}
+    K: {t: 'K', s: 'Л'}
+    L: {t: 'L', s: 'Д'}
+
+    Z: {t: 'Z', s: 'Я'}
+    X: {t: 'X', s: 'Ч'}
+    C: {t: 'C', s: 'С'}
+    V: {t: 'V', s: 'М'}
+    B: {t: 'B', s: 'И'}
+    N: {t: 'N', s: 'Т'}
+    M: {t: 'M', s: 'Ь'}
+
+    # ---- Символы, у которых в русской раскладке своя буква/знак ----
+    LBKT:  {t: '[', s: 'Х'}
+    RBKT:  {t: ']', s: 'Ъ'}
+    SEMI:  {t: ';', s: 'Ж'}
+    SQT:   {t: "'", s: 'Э'}
+    COMMA: {t: ',', s: 'Б'}
+    DOT:   {t: '.', s: 'Ю'}
+    FSLH:  {t: '/', s: '.'}
+
+    # ---- ЦИФРЫ: цифра + символ Shift+цифра в русской ЙЦУКЕН ----
+    N0: {t: '0', s: ')'}
+    N1: {t: '1', s: '!'}
+    N2: {t: '2', s: '"'}
+    N3: {t: '3', s: '№'}
+    N4: {t: '4', s: ';'}
+    N5: {t: '5', s: '%'}
+    N6: {t: '6', s: ':'}
+    N7: {t: '7', s: '?'}
+    N8: {t: '8', s: '*'}
+    N9: {t: '9', s: '('}
+
+    # ---- Символы, которые в русской раскладке живут на других местах ----
+    QMARK:         {t: '?', s: 'RU: S+7'}
+    DOUBLE_QUOTES: {t: '"', s: 'RU: S+2'}
+    COLON:         {t: ':', s: 'RU: S+6'}
+    EXCL:          {t: '!', s: 'RU: S+1'}
+    PERCENT:       {t: '%', s: 'RU: S+5'}
+
+    # ---- Остальные defaults ----
     AMPERSAND: '&'
     AMPS: '&'
     APOS: "'"
@@ -166,25 +217,18 @@ parse_config:
     ASTRK: '*'
     AT: '@'
     AT_SIGN: '@'
-    BACKSLASH: \
-    BSLH: \
-    CARET: ^
-    COLON: ':'
-    COMMA: ','
+    BACKSLASH: '\'
+    BSLH: '\'
+    CARET: '^'
     DLLR: $
     DOLLAR: $
-    DOT: .
-    DOUBLE_QUOTES: '"'
     DQT: '"'
     EQUAL: '='
-    EXCL: '!'
     EXCLAMATION: '!'
-    FSLH: /
     GRAVE: '`'
     GREATER_THAN: '>'
     GT: '>'
     HASH: '#'
-    LBKT: '['
     LBRC: '{'
     LEFT_BRACE: '{'
     LEFT_BRACKET: '['
@@ -193,30 +237,25 @@ parse_config:
     LPAR: (
     LT: <
     MINUS: '-'
-    NON_US_BACKSLASH: \
+    NON_US_BACKSLASH: '\'
     NON_US_BSLH: '|'
     NON_US_HASH: '#'
     NUHS: '#'
-    PERCENT: '%'
     PERIOD: .
     PIPE: '|'
     PIPE2: '|'
     PLUS: +
     POUND: '#'
     PRCNT: '%'
-    QMARK: '?'
     QUESTION: '?'
-    RBKT: ']'
     RBRC: '}'
     RIGHT_BRACE: '}'
     RIGHT_BRACKET: ']'
     RIGHT_PARENTHESIS: )
     RPAR: )
-    SEMI: ;
     SEMICOLON: ;
-    SINGLE_QUOTE: ''''
+    SINGLE_QUOTE: "'"
     SLASH: /
-    SQT: ''''
     STAR: '*'
     TILDE: '~'
     TILDE2: '~'
