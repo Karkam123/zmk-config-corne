@@ -61,30 +61,38 @@ parse_config:
     '&mkp MB4': Back Click
     '&mkp MB5': Forward Click
 
-    # ---- Старые AltGr-символы (на случай, если где-то остались) ----
-    '&kp RA(SINGLE_QUOTE)': "'"
-    '&kp RA(DOUBLE_QUOTES)': '"'
-    '&kp RA(GRAVE)': '`'
-    '&kp RA(LEFT_BRACKET)': '['
-    '&kp RA(RIGHT_BRACKET)': ']'
-    '&kp RA(LEFT_BRACE)': '{'
-    '&kp RA(RIGHT_BRACE)': '}'
-    '&kp RA(LESS_THAN)': '<'
-    '&kp RA(GREATER_THAN)': '>'
-    '&kp RA(COMMA)': ','
-    '&kp RA(DOT)': '.'
-    '&kp RA(COLON)': ':'
-    '&kp RA(SEMICOLON)': ';'
-    '&kp RA(N7)': '&'
-    '&kp RA(PIPE)': '|'
-    '&kp RA(N4)': {t: '$', s: '(S) ₽'}
-    '&kp RA(N3)': {t: '#', s: '(S) №'}
-    '&kp RA(N2)': '@'
-    '&kp RA(TILDE)': '~'
-    '&kp RA(N6)': '^'
-    '&kp RA(QUESTION)': '?'
-    '&kp RA(SLASH)': '/'
-    '&kp RA(BACKSLASH)': '\'
+    # ---- Unicode-символы (слой SYM) ----
+    '&uc 0x0060': '`'
+    '&uc 0x007E': '~'
+    '&uc 0x002A': '*'
+    '&uc 0x002B': '+'
+    '&uc 0x005C': '\'
+    '&uc 0x0022': '"'
+    '&uc 0x003A': ':'
+    '&uc 0x003B': ';'
+    '&uc 0x005F': '_'
+    '&uc 0x003F': '?'
+    '&uc 0x007C': '|'
+    '&uc 0x0025': '%'
+    '&uc 0x003C': '<'
+    '&uc 0x007B': '{'
+    '&uc 0x005B': '['
+    '&uc 0x0028': '('
+    '&uc 0x005E': '^'
+    '&uc 0x0027': "'"
+    '&uc 0x0026': '&'
+    '&uc 0x0040': '@'
+    '&uc 0x003E': '>'
+    '&uc 0x007D': '}'
+    '&uc 0x005D': ']'
+    '&uc 0x0029': ')'
+    '&uc 0x0024': {t: '$', s: '(S) ₽'}
+    '&uc 0x0023': {t: '#', s: '(S) №'}
+    '&uc 0x002E': '.'
+    '&uc 0x002C': ','
+    '&uc 0x003D': '='
+    '&uc 0x0021': '!'
+    '&uc 0x002F': '/'
 
     '&alt_dash': {t: '-', s: (S) NB}
     '&alt_space': {t: '␣', s: (CA) NB}
@@ -110,7 +118,6 @@ parse_config:
     bt_right_combo: { align: bottom }
 
   zmk_keycode_map:
-    # ---- Кастомные подписи ----
     C_VOL_UP: Vol Up
     C_VOL_DN: Vol Down
     C_BRI_UP: Bright Up
@@ -150,7 +157,7 @@ parse_config:
     C_NEXT: ⏭️
     C_PREV: ⏮️
 
-    # ---- Буквы: латиница + кириллица (ЙЦУКЕН) ----
+    # ---- Буквы: латиница + кириллица ----
     Q: {t: 'Q', s: 'Й'}
     W: {t: 'W', s: 'Ц'}
     E: {t: 'E', s: 'У'}
@@ -180,7 +187,6 @@ parse_config:
     N: {t: 'N', s: 'Т'}
     M: {t: 'M', s: 'Ь'}
 
-    # ---- Символы, у которых в русской раскладке своя буква/знак ----
     LBKT:  {t: '[', s: 'Х'}
     RBKT:  {t: ']', s: 'Ъ'}
     SEMI:  {t: ';', s: 'Ж'}
@@ -189,7 +195,7 @@ parse_config:
     DOT:   {t: '.', s: 'Ю'}
     FSLH:  {t: '/', s: '.'}
 
-    # ---- ЦИФРЫ: цифра + символ Shift+цифра в русской ЙЦУКЕН ----
+    # ---- ЦИФРЫ: цифра + Shift+цифра в русской ЙЦУКЕН ----
     N0: {t: '0', s: ')'}
     N1: {t: '1', s: '!'}
     N2: {t: '2', s: '"'}
@@ -201,14 +207,6 @@ parse_config:
     N8: {t: '8', s: '*'}
     N9: {t: '9', s: '('}
 
-    # ---- Символы, которые в русской раскладке живут на других местах ----
-    QMARK:         {t: '?', s: 'RU: S+7'}
-    DOUBLE_QUOTES: {t: '"', s: 'RU: S+2'}
-    COLON:         {t: ':', s: 'RU: S+6'}
-    EXCL:          {t: '!', s: 'RU: S+1'}
-    PERCENT:       {t: '%', s: 'RU: S+5'}
-
-    # ---- Остальные defaults ----
     AMPERSAND: '&'
     AMPS: '&'
     APOS: "'"
@@ -224,6 +222,7 @@ parse_config:
     DOLLAR: $
     DQT: '"'
     EQUAL: '='
+    EXCL: '!'
     EXCLAMATION: '!'
     GRAVE: '`'
     GREATER_THAN: '>'
