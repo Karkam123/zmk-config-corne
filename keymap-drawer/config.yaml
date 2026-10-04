@@ -123,6 +123,13 @@ parse_config:
     '&hscroll_mouse_mode': H.Scroll Mouse Mode
     '&vscroll_mouse_mode': V.Scroll Mouse Mode
 
+    '&kp LC(S)': Save
+    '&admin': admin
+    '&serucity': serucity
+    '&scr1': scr1
+    '&root': root
+    '&scr2': scr2
+
   zmk_combos:
     bt_left_combo: { align: bottom }
     bt_right_combo: { align: bottom }

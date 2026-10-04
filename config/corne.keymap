@@ -1,7 +1,7 @@
 // comment
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20   // 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -78,6 +78,43 @@ name: name { \
             label = "TO_COLEMAK";
         };
 
+        // ---- Текстовые макросы для слоя FUNC ----
+        admin: admin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp D &kp M &kp I &kp N>;
+            label = "ADMIN";
+        };
+
+        serucity: serucity {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp E &kp R &kp U &kp C &kp I &kp T &kp Y>;
+            label = "SERUCITY";
+        };
+
+        scr1: scr1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp A &kp S &kp S &kp LS(W) &kp O &kp R &kp D &kp N1>;
+            label = "SCR1";
+        };
+
+        root: root {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp O &kp O &kp T>;
+            label = "ROOT";
+        };
+
+        scr2: scr2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp H &kp B &kp C &kp SQT &kp R &kp C &kp G>;
+            label = "SCR2";
+        };
+
+        // F13
         slow_mouse_mode: slow_mouse_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -86,6 +123,7 @@ name: name { \
             bindings = <&macro_tap &kt_off F14 &kt_off F15 &kt_off F16 &kt_on F13>;
         };
 
+        // F14
         fast_mouse_mode: fast_mouse_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -94,6 +132,7 @@ name: name { \
             bindings = <&macro_tap &kt_off F13 &kt_off F15 &kt_off F16 &kt_on F14>;
         };
 
+        // F15
         hscroll_mouse_mode: hscroll_mouse_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -102,6 +141,7 @@ name: name { \
             bindings = <&macro_tap &kt_off F13 &kt_off F14 &kt_on F15>;
         };
 
+        // F16
         vscroll_mouse_mode: vscroll_mouse_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -115,9 +155,7 @@ name: name { \
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms  = <0>;
-            bindings = <&macro_tap
-                &kt_off F13 &kt_off F14 &kt_off F15 &kt_off F16
-            >;
+            bindings = <&macro_tap &kt_off F13 &kt_off F14 &kt_off F15 &kt_off F16>;
         };
 
         mouse_layer_off: mouse_layer_off {
@@ -270,7 +308,7 @@ name: name { \
         NAV {
             bindings = <
 &mouse_layer  &to_rus    &to_eng    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &swapper   &kp LG(TAB)  &kp HOME  &kp UP    &kp END        &kp PG_UP      &kp LC(HOME)
-&tabber       &kp LGUI   &kp LALT   &kp LCTRL         &kp LSHFT          &kp RET    &kp RET      &kp LEFT  &kp DOWN  &kp RIGHT      &kp PG_DN      &kp LC(END)
+&tabber       &kp LC(S)  &kp LALT   &kp LCTRL         &kp LSHFT          &kp RET    &kp RET      &kp LEFT  &kp DOWN  &kp RIGHT      &kp PG_DN      &kp LC(END)
 &kp LC(Y)     &kp LC(Z)  &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp LG(D)    &kp BSPC  &kp DEL   &kp LC(PG_UP)  &kp LC(PG_DN)  &kp K_APP
                                     &trans            &trans             &trans     &trans       &trans    &trans
             >;
@@ -287,18 +325,18 @@ name: name { \
 
         SYM {
             bindings = <
-&uc 0x0060 0x0060  &uc 0x007E 0x007E  &uc 0x002A 0x002A  &alt_dash              &uc 0x002B 0x002B  &uc 0x005C 0x005C  &uc 0x0022 0x0022  &uc 0x003A 0x003A  &uc 0x003B 0x003B  &uc 0x005F 0x005F  &uc 0x003F 0x003F  &uc 0x007C 0x007C
-&uc 0x0025 0x0025  &uc 0x003C 0x003C  &uc 0x007B 0x007B  &uc 0x005B 0x005B  &uc 0x0028 0x0028  &uc 0x005E 0x005E  &uc 0x0027 0x0027  &kp LSHFT               &kp LCTRL               &kp LALT               &kp LGUI               &uc 0x0026 0x0026
+&uc 0x0060 0x007E  &uc 0x002A 0x002A  &uc 0x002D 0x2013  &alt_dash   &uc 0x002B 0x002B  &uc 0x005C 0x007C  &uc 0x0022 0x0022  &uc 0x003A 0x003A  &uc 0x003B 0x003B  &uc 0x005F 0x005F  &uc 0x003F 0x003F  &uc 0x007C 0x007C
+&uc 0x0025 0x0025  &uc 0x003C 0x003E  &uc 0x007B 0x007B  &uc 0x005B 0x005B  &uc 0x0028 0x0028  &uc 0x005E 0x005E  &uc 0x0027 0x0027  &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI    &uc 0x0026 0x0026
 &uc 0x0040 0x0040  &uc 0x003E 0x003E  &uc 0x007D 0x007D  &uc 0x005D 0x005D  &uc 0x0029 0x0029  &uc 0x0024 0x0024  &uc 0x0023 0x0023  &uc 0x002E 0x002E  &uc 0x002C 0x002C  &uc 0x003D 0x003D  &uc 0x0021 0x0021  &uc 0x002F 0x002F
-                                                                         &trans                  &trans                  &trans                  &trans                  &trans                  &trans
+                                                                         &trans      &trans      &trans      &trans      &trans      &trans
             >;
         };
 
         FUNC {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &kp C_BRI_UP  &none         &none         &none          &none      &kp LA(F4)
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(MINUS)  &kp C_BRI_DN  &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI   &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN  &none
+&admin  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &kp C_BRI_UP  &none         &none         &none          &none      &kp LA(F4)
+&serucity  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(MINUS)  &kp C_BRI_DN  &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI   &root
+&scr1   &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN  &scr2
                         &trans   &trans   &trans         &trans        &trans        &trans
             >;
         };
