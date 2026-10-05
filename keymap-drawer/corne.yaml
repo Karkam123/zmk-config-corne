@@ -216,7 +216,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   FUNC:
-  - ''
+  - admin
   - F1
   - F2
   - F3
@@ -228,7 +228,7 @@ layers:
   - ''
   - ''
   - Win Close
-  - ''
+  - serucity
   - F5
   - F6
   - F7
@@ -239,8 +239,8 @@ layers:
   - Ctrl
   - Alt
   - Gui
-  - ''
-  - ''
+  - root
+  - scr1
   - F9
   - F10
   - F11
@@ -251,7 +251,7 @@ layers:
   - Vol Up
   - Snipping Tool
   - Print Screen
-  - ''
+  - scr2
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
