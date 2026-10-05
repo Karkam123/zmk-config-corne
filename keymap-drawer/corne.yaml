@@ -173,7 +173,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
-  - '`'
+  - {t: '`', s: Ё}
   - '~'
   - '*'
   - {t: '-', s: (S) NB}
