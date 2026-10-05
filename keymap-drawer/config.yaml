@@ -61,30 +61,37 @@ parse_config:
     '&mkp MB4': Back Click
     '&mkp MB5': Forward Click
 
-    # ---- Старые AltGr-символы (на случай, если где-то остались) ----
-    '&kp RA(SINGLE_QUOTE)': "'"
-    '&kp RA(DOUBLE_QUOTES)': '"'
-    '&kp RA(GRAVE)': '`'
-    '&kp RA(LEFT_BRACKET)': '['
-    '&kp RA(RIGHT_BRACKET)': ']'
-    '&kp RA(LEFT_BRACE)': '{'
-    '&kp RA(RIGHT_BRACE)': '}'
+    # ---- Alt codes (символы слоя SYM/SYM) ----
+    '&kp RA(BACKSLASH)': {t: '\\', s: '|'}
+    '&kp RA(SLASH)': '/'
+    '&kp RA(ASTRK)': '*'
+    '&kp RA(MINUS)': '-'
+    '&kp RA(PLUS)': '+'
+    '&kp RA(DOUBLE_QUOTES)': {t: '"', s: 'Э'}
+    '&kp RA(COLON)': {t: ':', s: 'Ж'}
+    '&kp RA(SEMICOLON)': {t: ';', s: 'Ж'}
+    '&kp RA(UNDERSCORE)': '_'
+    '&kp RA(QUESTION)': {t: '?', s: ','}
+    '&kp RA(PIPE)': '|'
+    '&kp RA(PERCENT)': '%'
     '&kp RA(LESS_THAN)': '<'
     '&kp RA(GREATER_THAN)': '>'
-    '&kp RA(COMMA)': ','
-    '&kp RA(DOT)': '.'
-    '&kp RA(COLON)': ':'
-    '&kp RA(SEMICOLON)': ';'
-    '&kp RA(N7)': '&'
-    '&kp RA(PIPE)': '|'
-    '&kp RA(N4)': {t: '$', s: '(S) ₽'}
-    '&kp RA(N3)': {t: '#', s: '(S) №'}
-    '&kp RA(N2)': '@'
+    '&kp RA(LEFT_BRACE)': '{'
+    '&kp RA(RIGHT_BRACE)': '}'
+    '&kp RA(LEFT_BRACKET)': {t: '[', s: 'Х'}
+    '&kp RA(RIGHT_BRACKET)': {t: ']', s: 'Ъ'}
+    '&kp RA(LPAR)': '('
+    '&kp RA(RPAR)': ')'
     '&kp RA(TILDE)': '~'
-    '&kp RA(N6)': '^'
-    '&kp RA(QUESTION)': '?'
-    '&kp RA(SLASH)': '/'
-    '&kp RA(BACKSLASH)': '\'
+    '&kp RA(SINGLE_QUOTE)': {t: "'", s: 'Э'}
+    '&kp RA(GRAVE)': {t: '`', s: 'Ё'}
+    '&kp RA(N2)': {t: '@', s: '"'}
+    '&kp RA(N3)': {t: '#', s: '№'}
+    '&kp RA(N4)': {t: '$', s: ';'}
+    '&kp RA(N6)': {t: '^', s: ':'}
+    '&kp RA(N7)': {t: '&', s: '?'}
+    '&kp RA(DOT)': {t: '.', s: 'Ю'}
+    '&kp RA(COMMA)': {t: ',', s: 'Б'}
 
     '&alt_dash': {t: '-', s: (S) NB}
     '&alt_space': {t: '␣', s: (CA) NB}
@@ -110,7 +117,7 @@ parse_config:
     bt_right_combo: { align: bottom }
 
   zmk_keycode_map:
-    # ---- Кастомные подписи ----
+    # custom mappings
     C_VOL_UP: Vol Up
     C_VOL_DN: Vol Down
     C_BRI_UP: Bright Up
@@ -150,7 +157,7 @@ parse_config:
     C_NEXT: ⏭️
     C_PREV: ⏮️
 
-    # ---- Буквы: латиница + кириллица (ЙЦУКЕН) ----
+    # ---- БУКВЫ: латиница + кириллица (ЙЦУКЕН) ----
     Q: {t: 'Q', s: 'Й'}
     W: {t: 'W', s: 'Ц'}
     E: {t: 'E', s: 'У'}
@@ -188,6 +195,7 @@ parse_config:
     COMMA: {t: ',', s: 'Б'}
     DOT:   {t: '.', s: 'Ю'}
     FSLH:  {t: '/', s: '.'}
+    GRAVE: {t: '`', s: 'Ё'}
 
     # ---- ЦИФРЫ: цифра + символ Shift+цифра в русской ЙЦУКЕН ----
     N0: {t: '0', s: ')'}
@@ -201,7 +209,7 @@ parse_config:
     N8: {t: '8', s: '*'}
     N9: {t: '9', s: '('}
 
-    # ---- Символы, которые в русской раскладке живут на других местах ----
+    # ---- Ключевые символы (вторая подпись — где искать в RU) ----
     QMARK:         {t: '?', s: 'RU: S+7'}
     DOUBLE_QUOTES: {t: '"', s: 'RU: S+2'}
     COLON:         {t: ':', s: 'RU: S+6'}
@@ -225,7 +233,6 @@ parse_config:
     DQT: '"'
     EQUAL: '='
     EXCLAMATION: '!'
-    GRAVE: '`'
     GREATER_THAN: '>'
     GT: '>'
     HASH: '#'
